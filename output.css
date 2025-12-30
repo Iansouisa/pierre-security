@@ -420,6 +420,21 @@
       display: none;
     }
   }
+  .max-sm\:py-0 {
+    @media (width < 40rem) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+  }
+  .max-sm\:py-1 {
+    @media (width < 40rem) {
+      padding-block: calc(var(--spacing) * 1);
+    }
+  }
+  .max-sm\:py-10 {
+    @media (width < 40rem) {
+      padding-block: calc(var(--spacing) * 10);
+    }
+  }
   .sm\:text-left {
     @media (width >= 40rem) {
       text-align: left;
