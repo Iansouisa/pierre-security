@@ -504,19 +504,11 @@ p, label, input, span {
 }
 h1, h2, h3 {
   font-family: "DM Mono";
+  line-height: 1.3em;
 }
-@media (max-width: 639px) {
-  h1 {
-    font-size: 28px;
-    line-height: 42px;
-  }
-  h2 {
+@media (max-width: 641px) {
+  h1, h2, h3 {
     font-size: 26px;
-    line-height: 30px;
-  }
-  h3 {
-    font-size: 26px;
-    line-height: 30px;
   }
 }
 @property --tw-space-x-reverse {
