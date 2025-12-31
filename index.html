@@ -127,16 +127,16 @@
             class="flex w-full flex-col items-start justify-start gap-10 lg:flex-row"
           >
             <div
-              class="flex w-1/2 flex-col items-start justify-start gap-6 max-lg:w-full"
+              class="flex w-1/2 flex-col items-start justify-start gap-6 pb-2 max-lg:w-full max-sm:flex-row max-sm:justify-between max-sm:border-b max-sm:px-3"
             >
               <button
-                class="tab-button text-3xl font-normal text-white focus:outline-none"
+                class="tab-button text-3xl font-normal text-white focus:outline-none max-sm:text-2xl"
                 onclick="openTab(event, 'DienstenContent')"
               >
                 Diensten
               </button>
               <button
-                class="tab-button text-3xl font-normal text-zinc-600 focus:outline-none"
+                class="tab-button text-3xl font-normal text-zinc-600 focus:outline-none max-sm:text-2xl"
                 onclick="openTab(event, 'LocatiesContent')"
               >
                 Locaties
@@ -352,11 +352,13 @@
         tabbuttons = document.getElementsByClassName("tab-button");
         for (i = 0; i < tabbuttons.length; i++) {
           tabbuttons[i].classList.remove("text-white");
+          tabbuttons[i].classList.remove("border-b");
           tabbuttons[i].classList.add("text-zinc-600");
         }
         document.getElementById(tabName).style.display = "flex";
         evt.currentTarget.classList.remove("text-zinc-600");
         evt.currentTarget.classList.add("text-white");
+        evt.currentTarget.classList.add("border-b");
       }
 
       document.addEventListener("DOMContentLoaded", function () {
