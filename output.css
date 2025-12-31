@@ -452,14 +452,34 @@
       width: calc(var(--spacing) * 40);
     }
   }
+  .max-sm\:w-full {
+    @media (width < 40rem) {
+      width: 100%;
+    }
+  }
+  .max-sm\:items-center {
+    @media (width < 40rem) {
+      align-items: center;
+    }
+  }
   .max-sm\:justify-center {
     @media (width < 40rem) {
       justify-content: center;
     }
   }
+  .max-sm\:py-0 {
+    @media (width < 40rem) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+  }
   .max-sm\:py-10 {
     @media (width < 40rem) {
       padding-block: calc(var(--spacing) * 10);
+    }
+  }
+  .max-sm\:text-center {
+    @media (width < 40rem) {
+      text-align: center;
     }
   }
   .sm\:text-left {
