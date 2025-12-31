@@ -515,7 +515,7 @@ body {
 }
 p, label, input, span {
   font-family: "Montserrat";
-  color: white;
+  color: #9f9fa9;
   font-weight: 400;
 }
 .button {
